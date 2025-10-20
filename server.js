@@ -3,7 +3,7 @@ const app = express();
 
 // Egyszerű route
 app.get("/", (req, res) => {
-  res.send("Hello from Express on Vercel!!!");
+  res.send("Hello from Express on Vercel!");
 });
 
 // Vercel port beállítása
