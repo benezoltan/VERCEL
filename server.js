@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
 
 // Vercel port beállítása
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+
+// Remove explicit listening when deploying to Vercel; export the app so the @vercel/node builder can handle incoming requests
+module.exports = app;
